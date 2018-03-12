@@ -8,7 +8,7 @@ namespace P2
         {
             InitializeComponent();
 
-            MainPage = new P2Page();
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()

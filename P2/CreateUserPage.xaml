@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="P2.CreateUserPage"
+             Title="Create User">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Entry x:Name="firstNameEntry"
+                   Placeholder="Firt Name"/>
+            <Entry x:Name="lastNameEntry"
+                   Placeholder="Last Name"/>
+            <Entry x:Name="usernameEntry"
+                   Placeholder="Username"/>
+            <Entry x:Name="emailEntry"
+                   Placeholder="Email"
+                   Keyboard="Email"/>
+            <Entry x:Name="passwordEntry"
+                   Placeholder="Password"
+                   IsPassword="true"/>
+            <Entry x:Name="confirmPasswordEntry"
+                   Placeholder="Confirm Password"
+                   IsPassword="true"/>
+          
+            <Label Text="add Photo"/>
+            <Button x:Name="createButton"
+                   Text="Create"
+                   Clicked="createButtonClickedAsync"/>
+            
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
